@@ -12,47 +12,27 @@
   </head>
   <body>
     <div class="container">
-      <h1>All Recipes</h1>
+      <h1>Edit a Recipe</h1>
 
-      <h2><a href="/recipes/2">Fava Bean side dish</a></h2>
-        <h3>By: Joe</h3>
-        <h4>Ingredients: ice, tap water, 2 lbs fresh fava beans in the pod, 1 tablespoon butter, 1 teaspoon olive oil, 2 garlic cloves</h4>
-        <h4>Prep Time: 125</h4>
+      <form action="/recipes/2" method="patch">
+        <div>
+          Title: <input type="text" name="title" value="Fava Bean side dish">
+        </div>
+        <div>
+          Prep Time: <input type="text" name="prep_time" value="125">
+        </div>
+        <div>
+          Ingredients: <input type="text" name="ingredients" value="ice, tap water, 2 lbs fresh fava beans in the pod, 1 tablespoon butter, 1 teaspoon olive oil, 2 garlic cloves">
+        </div>
+        <div>
+          Directions: <input type="text" name="directions" value="boil 4 cups of water, add salt, place fava beans in the boiling water for 5 min, remove fava beans and place in ice water, add seasoning to taste">
+        </div>
+        <div>
+          Image URL: <input type="text" name="image_url" value="http://bijouxs.com/wp-content/uploads/2011/05/Favabordercropsmall.jpg">
+        </div>
 
-        <br>
-        
-        <h2><a href="/recipes/3">Cookies</a></h2>
-        <h3>By: Joe</h3>
-        <h4>Ingredients: cookie mix, milk, eggs</h4>
-        <h4>Prep Time: 480</h4>
-
-        <br>
-        
-        <h2><a href="/recipes/1">Hand Sandwich</a></h2>
-        <h3>By: Joe</h3>
-        <h4>Ingredients: left hand, right hand</h4>
-        <h4>Prep Time: 1</h4>
-
-        <br>
-        
-        <h2><a href="/recipes/5">Lasagna</a></h2>
-        <h3>By: Joe</h3>
-        <h4>Ingredients: noodles, tomato paste, meat, onions, garlic, other stuff</h4>
-        <h4>Prep Time: 60</h4>
-
-        <br>
-        
-        <h2><a href="/recipes/4">Egg</a></h2>
-        <h3>By: Joe</h3>
-        <h4>Ingredients: chicken, egg</h4>
-        <h4>Prep Time: 4</h4>
-
-        <br>
-        
-        <h2><a href="/recipes/6">Burger</a></h2>
-        <h3>By: Joe</h3>
-        <h4>Ingredients: car, money, driver&#39;s license</h4>
-        <h4>Prep Time: 5</h4>
+        <input type="submit" value="Update Recipe">
+      </form>
     </div>
 
     <!-- Optional JavaScript -->
