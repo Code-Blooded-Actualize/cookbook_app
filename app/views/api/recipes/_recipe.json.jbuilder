@@ -5,7 +5,6 @@ json.prep_time recipe.prep_time
 json.ingredients recipe.ingredients
 json.directions recipe.directions
 json.image_url recipe.image_url
-json.link "http://localhost:3000/api/recipes/#{recipe.id}"
 
 json.formatted do
   json.created_at recipe.friendly_created_at

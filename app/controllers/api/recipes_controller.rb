@@ -27,7 +27,7 @@ class Api::RecipesController < ApplicationController
   def create
     @recipe = Recipe.new(
                          title: params[:title],
-                         user_id: current_user.id,
+                         user_id: 1, #current_user.id,
                          ingredients: params[:ingredients],
                          directions: params[:directions],
                          image_url: params[:image_url],
@@ -46,7 +46,6 @@ class Api::RecipesController < ApplicationController
     @recipe = Recipe.find(params[:id])
 
     @recipe.title = params[:title] || @recipe.title
-    @recipe.chef = params[:chef] || @recipe.chef
     @recipe.prep_time = params[:prep_time] || @recipe.prep_time
     @recipe.ingredients = params[:ingredients] || @recipe.ingredients
     @recipe.directions = params[:directions] || @recipe.directions
