@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js" defer></script>
 
     <title>Cookbook App</title>
@@ -51,7 +52,6 @@
     </nav>
 
     <div class="container">
-        
         <div class="row">
             
         </div>
@@ -70,10 +70,10 @@
   <div class="col-md-4 card-top-spacing">
       <div class="card">
           <div class="card-body">
-              <h5 class="card-title"><a href="/recipes/2">Fava Bean side dish</a></h5>
+              <h5 class="card-title"><a class="recipe-title" href="/recipes/2">Fava Bean side dish</a></h5>
               <h6 class="card-subtitle mb-2 text-muted">By: Joe</h6>
-              <p class="card-text">Ingredients: ice, tap water, 2 lbs fresh fava beans in the pod, 1 tablespoon butter, 1 teaspoon olive oil, 2 garlic cloves</p>
-              <p class="card-text">Prep Time: 125</p>
+              <p class="card-text">Ingredients: <span class="ingredients"></span></p>
+              <p class="card-text">Prep Time: <span class="prep-time"></span></p>
           </div>
       </div>
   </div>
