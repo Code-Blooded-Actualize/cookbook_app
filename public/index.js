@@ -11,7 +11,10 @@ axios.get("http://localhost:3000/api/recipes").then(function(response) {
 
     recipeClone.querySelector('.recipe-title').innerText = recipe.title;
     recipeClone.querySelector('.ingredients').innerText = recipe.ingredients;
+    recipeClone.querySelector('.chef').innerText = recipe.chef;
     recipeClone.querySelector('.prep-time').innerText = recipe["formatted"]["prep_time"];
+    recipeClone.querySelector('.recipe-title').href = "/recipes/" + recipe["id"];
+    recipeClone.querySelector('img.card-img-top').src = recipe["image_url"];
 
     recipeContainer.appendChild(recipeClone);
   });
