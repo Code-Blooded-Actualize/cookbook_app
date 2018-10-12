@@ -2,6 +2,13 @@ var recipeTemplate = document.querySelector('#recipe-card');
 var recipeContainer = document.querySelector('.row');
 
 
+// response = HTTP.get("http://localhost:3000/api/recipes")
+// p response.parse
+
+// axios.get("http://localhost:3000/api/recipes").then(function(response) {
+//   console.log(response.data);
+// });
+
 axios.get("http://localhost:3000/api/recipes").then(function(response) {
   var recipes = response.data;
   console.log(recipes);
