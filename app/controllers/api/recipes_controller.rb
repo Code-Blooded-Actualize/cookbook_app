@@ -61,18 +61,3 @@ class Api::RecipesController < ApplicationController
     render json: {message: "Recipe successfully destroyed"}
   end
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
